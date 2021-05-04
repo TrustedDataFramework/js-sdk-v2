@@ -1,6 +1,6 @@
 {
   "name": "@tdos/js-sdk-v2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javascript sdk for sunflower protocol",
   "main": "index.js",
   "scripts": {
@@ -9,15 +9,16 @@
   "author": "salpadding",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
     "@types/node": "^15.0.0",
     "babel-loader": "^8.2.2",
+    "live-server": "^1.2.1",
     "ts-loader": "^9.1.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.2.4",
     "webpack": "^5.36.2",
-    "webpack-cli": "^4.6.0",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1"    
+    "webpack-cli": "^4.6.0"
   },
   "dependencies": {
     "ethers": "^5.1.4"

@@ -1,5 +1,4 @@
-export { compileRust } from './abi'
-
+export * from './abi'
 import { JsonFragment } from '@ethersproject/abi'
 import { utils, BytesLike } from 'ethers'
 
