@@ -33,7 +33,7 @@ module.exports = (env = {}) => {
             ],
         },
         externals: {
-            '../linker/nodejs': 'undefined',
+            '../linker/nodejs': 'tdos_linker',
             'ethers': 'ethers'
         }        
     }
