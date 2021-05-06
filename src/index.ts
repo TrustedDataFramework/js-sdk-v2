@@ -1,6 +1,6 @@
 export * from './abi'
 import { JsonFragment } from '@ethersproject/abi'
-import { utils, BytesLike } from 'ethers'
+import { utils, BytesLike, Contract } from 'ethers'
 
 export const POW_BIOS_ADDRESS = '0x0000000000000000000000000000000000000002'
 export const POA_AUTH_ADDRESS = "0x0000000000000000000000000000000000000004";
@@ -26,4 +26,3 @@ export function inline(code: utils.BytesLike, abi: string | JsonFragment[], args
     // and encoded as rlp
     return '0x' + link(utils.hexlify(code).substring(2), <any> abi, encoded.substring(2))
 }
-

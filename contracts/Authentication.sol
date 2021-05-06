@@ -17,4 +17,6 @@ interface Authentication {
 
     // returns approved for this pending 
     function pending(address dst)  external view returns (address[] memory); 
+    
+    function getProposer(uint256 timestamp) external view returns (address, uint256 start, uint256 end);
 }
