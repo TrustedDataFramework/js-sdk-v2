@@ -1,6 +1,6 @@
 {
   "name": "@tdos/js-sdk-v2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "javascript sdk for sunflower protocol",
   "main": "index.js",
   "scripts": {

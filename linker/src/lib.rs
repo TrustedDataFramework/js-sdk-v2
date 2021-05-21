@@ -18,7 +18,9 @@ extern {
 fn drop_blank(s: &str) -> String{
     // drop blank
     let mut ret = String::new();
+    let s = s.strip_prefix("0x").unwrap_or(s);
     for c in s.chars().into_iter() {
+        
         if c == ' ' || c == '\n' || c == ' ' || c == '\t' {
             continue;
         }
@@ -50,7 +52,8 @@ pub fn link(code: String, abi: String, init: String) -> String {
 
     let linked = m.custom_sections().any(|x| x.name() == "__init");
 
-    if !linked {
+    // when init == NULL, skip __init link
+    if !linked && &init != "NULL"{
         let data = decode_hex(&init).unwrap();
         let new_section = Section::Custom(CustomSection::new("__init".to_string(), data));
         m.sections_mut().insert(0, new_section);        

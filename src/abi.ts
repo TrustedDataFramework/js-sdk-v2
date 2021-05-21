@@ -48,7 +48,7 @@ export function compileRust(str: string): JsonFragment[] {
     const stateMutabilities = ['payable', 'view', 'pure', 'nopayable']
 
     if (!str)
-      return 'payable'
+      return 'nonpayable'
 
     for (let x of stateMutabilities) {
       if (str.indexOf(x) >= 0)
