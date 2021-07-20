@@ -20,6 +20,7 @@ export function compileRust(str: string): JsonFragment[] {
     'boolean': 'bool',
     'Vec<Vec<u8>>': 'bytes[]',
     'Vec<Address>': 'address[]',
+    'Bytes32': 'bytes32',
   }   
 
   function getInputs(str: string): JsonFragmentType[] {
