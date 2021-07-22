@@ -2,7 +2,7 @@
   "name": "@tdos/js-sdk-v2",
   "version": "1.0.5",
   "description": "javascript sdk for sunflower protocol",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,7 @@
     "@babel/preset-env": "^7.12.1",
     "@typechain/ethers-v5": "^6.0.5",
     "@types/node": "^15.0.0",
+    "assemblyscript": "^0.19.7",
     "babel-loader": "^8.2.2",
     "live-server": "^1.2.1",
     "ts-loader": "^9.1.1",

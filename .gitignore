@@ -4,3 +4,4 @@ linker/target
 linker/nodejs
 local
 dist
+bin
